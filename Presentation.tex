@@ -1,0 +1,141 @@
+\documentclass{beamer}
+\usetheme{default}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage[autostyle]{csquotes}
+\usepackage[british]{babel}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+%-----
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{etoolbox} %math
+\usepackage{graphicx}
+%\usepackage{color}
+\usetheme{Madrid}
+
+\title{<<THESIS TITLE>>}
+\author{<<Name of Scholar, School?Department>>}
+\institute{
+	\begin{tabular}{c}
+		Guide: NAME-1 \\
+		Co-guide: NAME-2
+	\end{tabular}
+}
+
+\date{\today}
+\subtitle{Sample LaTex PhD Presentation}
+
+\setbeamertemplate{footline}{%
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{author in head/foot}%
+			\hspace*{2em}\insertsectionhead\hfill\llap{\insertframenumber{} / \inserttotalframenumber\hspace*{2em}}
+		\end{beamercolorbox}%
+	}%
+	\vskip0pt%
+}
+
+\begin{document}
+\begin{frame}[plain]
+    \maketitle
+    
+\end{frame}
+% Hide subsections from table of contents
+\begin{frame}{Outline}
+	\tableofcontents[hideallsubsections]
+%r \tableofcontents[pausesections]
+% \tableofcontents
+\end{frame}
+% Current section
+\AtBeginSection[ ]
+{
+	\begin{frame}{Outline}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+% Presentation structure
+\section{Motivation and Introduction}
+\begin{frame}{SLIDE TITLE}
+	\begin{itemize}
+		\item A thesis or dissertation is a document submitted in support of candida-
+		ture for an academic degree or professional qualification presenting the author’s research and findings.
+		\vspace{3mm}
+		\item The size of the Thesis shall be normally between 100 and 350 pages of typed matter reckoned	from the first page of Chapter 1 to the last page of the thesis excluding reference section.
+	\end{itemize}
+\end{frame}
+
+
+\section[Research Objective 1]{Research Objective 1: Text goes here....}
+
+\begin{frame}{Another Slide}
+In the preparation of the manuscript, care should be taken to ensure that all textual matter is
+typewritten to the extent possible in the same format as may be required for the final Thesis.
+\end{frame}
+\subsection{Previous research}
+\begin{frame}
+	\frametitle{Literature Review}
+	A literature review is a survey of scholarly sources on a specific topic. It is often written as part of a thesis, dissertation, or research paper, in order to situate your work in relation to existing knowledge.
+\end{frame}
+
+\subsection{Data sources and data curation}
+\begin{frame}{Data sources and data curation}
+Data curation is the process of collecting, organizing, describing, preserving, and sharing data for future use. It is an important part of data management, and it helps to ensure that data is accurate, accessible, and useful.
+\end{frame}
+
+\subsection{Results and Evaluation metrics}
+\begin{frame}{Another Slide...}
+Results and evaluation metrics are two important concepts in data science and machine learning. Results are the outputs of a model or algorithm, while evaluation metrics are used to measure the performance of a model or algorithm.	
+\end{frame}
+\section{Research Objective 2: text goes here....}
+\subsection{Theoretical foundations}
+\begin{frame}{Another Slide....}
+	There are a number of different evaluation metrics that can be used, depending on the specific problem that is being solved.
+\end{frame}
+\subsection{Previous research}
+\begin{frame}
+	\frametitle{Another Slide....}
+Overall, results and evaluation metrics are important concepts in data science and machine learning. They help to ensure that the models and algorithms are performing as expected...
+\end{frame}
+\section*{References}
+
+\begin{frame}{References}
+	
+	\begin{thebibliography}{9}
+		\bibitem{dis}
+		Alred, G. J., Brusaw, C. T. and Oliu, W. E. (2019), Handbook of technical writing, Bedford/St.	Martin’s Macmillan Learning. 
+		
+		\bibitem{epi}
+		Gilbarg, D. and Trudinger, N. S. (2015), Elliptic partial differential equations of second order,
+		Springer Publications.
+		
+		
+		
+	\end{thebibliography}
+\end{frame}
+
+\begin{frame}{Publication}
+	
+	\begin{thebibliography}{10}
+		\bibitem{dis}
+		\alert{Manoov Rajapandy, Anand Anbarasu }
+		\newblock  {An improved unsupervised learning approach for potential human microRNA–disease association inference using cluster knowledge.\\
+			Journal: \textbf{Network Modeling Analysis in Health Informatics and Bioinformatics} \\
+			Article number: 21 (2021)
+			Published: 23 March 2021}
+		\newblock {\em https://doi.org/https://doi.org/10.1007/s13721-021-00292-9}.	
+	\end{thebibliography}	
+\end{frame}
+
+\section{}
+\begin{frame}
+	\centering
+	{\LARGE Thank You}
+\end{frame}
+\begin{frame}
+	\centering
+	{\LARGE Questions}
+
+\end{frame}
+
+\end{document}
