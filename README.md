@@ -1,6 +1,6 @@
 # Sample-LaTex-PhD-Presentation
 
-Here are the steps on how to use GitHub Desktop to fork a repository locally:
+Here are the steps on how to use GitHub Desktop to fork this repository locally:
 
 - Open GitHub Desktop.
 - Click on the File menu and select Clone Repository.
